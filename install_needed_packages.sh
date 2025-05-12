@@ -61,3 +61,6 @@ sudo tee /etc/interception/udevmon.d/caps2esc.yml > /dev/null <<EOF
 EOF
 systemctl enable udevmon.service
 systemctl start udevmon.service
+
+sudo systemctl enable ly.service
+sudo systemctl start ly.service 
