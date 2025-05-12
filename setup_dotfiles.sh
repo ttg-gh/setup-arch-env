@@ -22,5 +22,7 @@ else
 fi
 
 sudo pacman -Syu stow
-stow .
+for dir in */; do
+	stow "${dir%/}"
+done
 cd
