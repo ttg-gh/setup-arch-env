@@ -33,6 +33,9 @@ PACMAN_PKGS=(
     neofetch
     interception-caps2esc
     interception-tools
+    fzf
+    tmux
+    ranger
 )
 
 # Define AUR packages
