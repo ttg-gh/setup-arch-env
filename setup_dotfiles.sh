@@ -5,7 +5,8 @@ read -p "Enter GitHub repository URL (e.g., https://github.com/user/repo.git): "
 
 # Extract repo name from URL
 repo_name=$(basename -s .git "$repo_url")
-
+sudo pacman -Syyu
+sudo pacman -Syu git
 cd
 # Clone the repository
 git clone "$repo_url"
