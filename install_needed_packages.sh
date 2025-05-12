@@ -50,6 +50,8 @@ sudo pacman -Syu --noconfirm "${PACMAN_PKGS[@]}"
 echo "Installing AUR packages..."
 yay -S --noconfirm "${AUR_PKGS[@]}"
 
+git clone https://github.com/folke/lazy.nvim.git ~/.local/share/nvim/lazy/lazy.nvim
+
 echo "Creating /etc/interception/udevmon.d/ directory..."
 sudo mkdir -p /etc/interception/udevmon.d/
 
