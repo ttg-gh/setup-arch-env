@@ -31,7 +31,6 @@ PACMAN_PKGS=(
     mako
     hyprpaper
     neofetch
-    starship
     interception-caps2esc
     interception-tools
 )
@@ -40,6 +39,7 @@ PACMAN_PKGS=(
 AUR_PKGS=(
     librewolf-bin
     kime-bin
+    starship
 )
 
 # Update system and install official packages
