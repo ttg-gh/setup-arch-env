@@ -32,7 +32,8 @@ PACMAN_PKGS=(
     hyprpaper
     neofetch
     starship
-    caps2esc
+    interception-caps2esc
+    interception-tools
 )
 
 # Define AUR packages
@@ -48,3 +49,16 @@ sudo pacman -Syu --noconfirm "${PACMAN_PKGS[@]}"
 # Install AUR packages
 echo "Installing AUR packages..."
 yay -S --noconfirm "${AUR_PKGS[@]}"
+
+echo "Creating /etc/interception/udevmon.d/ directory..."
+sudo mkdir -p /etc/interception/udevmon.d/
+
+echo "Creating udevmon job configuration file..."
+sudo cat <<EOF > /etc/interception/udevmon.d/caps2esc.yml
+- JOB: intercept -g \$DEVNODE | caps2esc | uinput -d \$DEVNODE
+  DEVICE:
+    EVENTS:
+      EV_KEY: [KEY_CAPSLOCK, KEY_ESC]
+EOF
+systemctl enable udevmon.service
+systemctl start udevmon.service
