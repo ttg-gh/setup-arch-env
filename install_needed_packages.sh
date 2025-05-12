@@ -53,8 +53,7 @@ yay -S --noconfirm "${AUR_PKGS[@]}"
 echo "Creating /etc/interception/udevmon.d/ directory..."
 sudo mkdir -p /etc/interception/udevmon.d/
 
-echo "Creating udevmon job configuration file..."
-sudo cat <<EOF > /etc/interception/udevmon.d/caps2esc.yml
+sudo tee /etc/interception/udevmon.d/caps2esc.yml > /dev/null <<EOF
 - JOB: intercept -g \$DEVNODE | caps2esc | uinput -d \$DEVNODE
   DEVICE:
     EVENTS:
