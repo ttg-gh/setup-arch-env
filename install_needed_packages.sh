@@ -1,5 +1,7 @@
 #!/bin/bash
 
+sudo pacman -Syyu
+
 cd ~
 echo "Installing yay..."
 
@@ -13,6 +15,8 @@ fi
 cd yay
 makepkg -si
 cd ~
+
+yay -Syyu
 
 # Define official repository packages (proper array syntax)
 PACMAN_PKGS=(
