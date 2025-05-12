@@ -36,6 +36,7 @@ PACMAN_PKGS=(
     fzf
     tmux
     ranger
+    wl-clipboard
 )
 
 # Define AUR packages
