@@ -21,6 +21,9 @@ else
     exit 1
 fi
 
+rm -rf .bashrc
+rm -rf .config
+
 sudo pacman -Syu stow
 for dir in */; do
 	stow "${dir%/}"
