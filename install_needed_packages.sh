@@ -45,6 +45,7 @@ AUR_PKGS=(
     librewolf-bin
     kime-bin
     starship
+    hyprshot
 )
 
 # Update system and install official packages
