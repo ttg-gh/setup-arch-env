@@ -5,12 +5,12 @@ sudo pacman -Syyu
 cd ~
 echo "Installing yay..."
 
-# Install prerequisites for building AUR packages
+Install prerequisites for building AUR packages
 sudo pacman -S --needed git base-devel
 
-# Clone and install yay
+Clone and install yay
 if [ ! -d yay ]; then
-    git clone https://aur.archlinux.org/yay.git
+   git clone https://aur.archlinux.org/yay.git
 fi
 cd yay
 makepkg -si
@@ -30,7 +30,6 @@ PACMAN_PKGS=(
     waybar
     mako
     hyprpaper
-    neofetch
     interception-caps2esc
     interception-tools
     fzf
@@ -38,6 +37,7 @@ PACMAN_PKGS=(
     ranger
     wl-clipboard
     unzip
+    gvfs
 )
 
 # Define AUR packages
