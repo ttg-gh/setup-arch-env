@@ -38,6 +38,7 @@ PACMAN_PKGS=(
     wl-clipboard
     unzip
     gvfs
+    xdg-desktop-portal-hyprland
 )
 
 # Define AUR packages
