@@ -34,7 +34,7 @@ PACMAN_PKGS=(
     interception-tools
     fzf
     tmux
-    ranger
+    yazi
     wl-clipboard
     unzip
     gvfs
