@@ -39,6 +39,7 @@ PACMAN_PKGS=(
     unzip
     gvfs
     xdg-desktop-portal-hyprland
+    lazygit
 )
 
 # Define AUR packages
