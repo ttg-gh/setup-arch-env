@@ -47,6 +47,7 @@ AUR_PKGS=(
     kime-bin
     starship
     hyprshot
+    yazi-nightly-bin
 )
 
 # Update system and install official packages
