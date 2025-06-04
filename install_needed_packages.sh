@@ -34,12 +34,12 @@ PACMAN_PKGS=(
     interception-tools
     fzf
     tmux
-    yazi
     wl-clipboard
     unzip
     gvfs
     xdg-desktop-portal-hyprland
     lazygit
+    ldns
 )
 
 # Define AUR packages
